@@ -1,14 +1,15 @@
-class ZCL_SM_PRUEBA definition
-  public
-  final
-  create public .
+CLASS zcl_sm_prueba DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
-protected section.
-private section.
+  PUBLIC SECTION.
+    DATA prueba TYPE n.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS ZCL_SM_PRUEBA IMPLEMENTATION.
+CLASS zcl_sm_prueba IMPLEMENTATION.
 ENDCLASS.
