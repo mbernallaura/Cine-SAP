@@ -10,6 +10,7 @@
 define view entity ZI_FUNCION as select from ztt_funcion 
 association to parent ZI_PELICULA as _Peliculas
 on $projection.id_pelicula = _Peliculas.id_pelicula
+composition [1..*] of ZI_SILLA as _Sillas
 {
     key id_funcion,
     key id_pelicula,
@@ -19,5 +20,6 @@ on $projection.id_pelicula = _Peliculas.id_pelicula
     @Semantics.amount.currencyCode: 'moneda_funcion'
     precio_funcion,
     moneda_funcion,
-    _Peliculas 
+    _Peliculas,
+    _Sillas 
 }

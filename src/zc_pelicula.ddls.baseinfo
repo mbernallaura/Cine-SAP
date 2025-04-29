@@ -6,9 +6,13 @@
 "ZI_PELICULA"
 ],
 "ASSOCIATED":
-[],
+[
+"ZI_FUNCION"
+],
 "BASE":
-[],
+[
+"ZI_PELICULA"
+],
 "ANNO_REF":
 [],
 "SCALAR_FUNCTION":

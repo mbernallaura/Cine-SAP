@@ -11,5 +11,6 @@ define root view entity ZC_PELICULA
     duracion,
     imagen,
     fecha_ini_estreno,
-    fecha_fin_estreno
+    fecha_fin_estreno,
+    _Funciones
 }

@@ -6,7 +6,10 @@
 "ZTT_SILLA"
 ],
 "ASSOCIATED":
-[],
+[
+"ZI_FUNCION",
+"ZI_PELICULA"
+],
 "BASE":
 [],
 "ANNO_REF":
