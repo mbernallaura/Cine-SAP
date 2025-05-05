@@ -1,0 +1,41 @@
+managed implementation in class z_cl_bp_i_pelicula unique;
+strict ( 2 );
+
+define behavior for ZI_PELICULA //alias <alias_name>
+persistent table ztt_pelicula
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) id_pelicula;
+  association _Funciones { create; }
+}
+
+define behavior for ZI_FUNCION //alias <alias_name>
+persistent table ztt_funcion
+lock dependent by _Peliculas
+authorization dependent by _Peliculas
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) id_funcion, id_pelicula;
+  association _Peliculas;
+  association _Sillas { create; }
+}
+
+define behavior for ZI_SILLA //alias <alias_name>
+persistent table ztt_silla
+lock dependent by _Peliculas
+authorization dependent by _Peliculas
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) id_silla, id_funcion, id_pelicula;
+  association _Peliculas;
+  association _Funciones;
+}
