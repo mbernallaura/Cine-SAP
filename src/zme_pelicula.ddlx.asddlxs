@@ -1,0 +1,161 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+    typeName: 'item',
+    typeNamePlural: 'Obras de Teatro',
+    title: {
+        type: #STANDARD,
+        label: 'Obra de teatro',
+        iconUrl: 'sap-icon://palette',
+        criticalityRepresentation: #WITHOUT_ICON,
+        value: 'nombre'
+    }
+}
+
+annotate entity ZC_PELICULA with
+{
+
+  @UI.facet: [
+      {
+          id: 'Identification01',
+          purpose: #STANDARD,
+          type: #IDENTIFICATION_REFERENCE,
+          label: 'Detalle película',
+          position: 10
+      },
+      {
+          id: 'LineItem01',
+           purpose: #STANDARD, 
+          type: #LINEITEM_REFERENCE,
+          label: 'Obra',
+          position: 80,
+          targetElement: '_Funciones'
+       }
+    ]
+
+  @UI.identification: [
+    {
+         position: 10,
+         label: 'Id'}
+    ]
+
+  @UI.selectionField: [
+    {position: 10}
+   ]
+  @UI.lineItem: [
+    {position: 10}
+  ]
+
+  id_pelicula;
+
+  @UI.lineItem: [
+    {position: 20}
+  ]
+  @UI.selectionField: [
+    {position: 20}
+  ]
+  @UI.identification: [
+    {
+    position: 20,
+    label: 'Nombre'
+    }
+  ]
+
+  nombre;
+  
+  @UI.lineItem: [
+    {position: 30}
+  ]
+  @UI.selectionField: [
+    {position: 30}
+  ]
+  @UI.identification: [
+    {
+    position: 30,
+    label: 'Descripción'
+    }
+  ]
+  descripciion;
+  
+  @UI.lineItem: [
+    {position: 40}
+  ]
+  @UI.selectionField: [
+    {position: 40}
+  ]
+  @UI.identification: [
+    {
+    position: 40,
+    label: 'Genero'
+    }
+  ]
+  genero;
+  
+  @UI.lineItem: [
+    {position: 50}
+  ]
+  @UI.selectionField: [
+    {position: 50}
+  ]
+  @UI.identification: [
+    {
+    position: 50,
+    label: 'Duración'
+    }
+  ]
+  duracion;
+  
+  @UI.lineItem: [
+    {position: 60}
+  ]
+  @UI.selectionField: [
+    {position: 60}
+  ]
+  @UI.identification: [
+    {
+    position: 60,
+    label: 'Imagen'
+    }
+  ]
+  imagen;
+  @UI.lineItem: [
+    {position: 70}
+  ]
+  @UI.selectionField: [
+    {position: 70}
+  ]
+  @UI.identification: [
+    {
+    position: 70,
+    label: 'Fecha Inicio Estreno'
+    }
+  ]
+  fecha_ini_estreno;
+  @UI.lineItem: [
+    {position: 70}
+  ]
+  @UI.selectionField: [
+    {position: 70}
+  ]
+  @UI.identification: [
+    {
+    position: 70,
+    label: 'Fecha Fin Estreno'
+    }
+  ]
+  fecha_fin_estreno;
+  /* Associations */
+  @UI.lineItem: [
+    {position: 80}
+  ]
+  @UI.selectionField: [
+    {position: 80}
+  ]
+  @UI.identification: [
+    {
+    position: 80,
+    label: 'Funciones'
+    }
+  ]
+  _Funciones;
+
+}
