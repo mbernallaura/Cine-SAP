@@ -1,0 +1,127 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+    typeName: 'item',
+    typeNamePlural: 'Función',
+    title: {
+        type: #STANDARD,
+        label: 'Función',
+        iconUrl: 'sap-icon://palette',
+        criticalityRepresentation: #WITHOUT_ICON,
+        value: 'id_funcion'
+    }
+}
+annotate entity ZC_FUNCION
+    with 
+{
+    @UI.facet: [
+      {
+          id: 'Identification01',
+          purpose: #STANDARD,
+          type: #IDENTIFICATION_REFERENCE,
+          label: 'Detalle función',
+          position: 10
+      },
+      {
+          id: 'LineItem01',
+           purpose: #STANDARD, 
+          type: #LINEITEM_REFERENCE,
+          label: 'Peliculas',
+          position: 80,
+          targetElement: '_Peliculas'
+       }
+    ]
+/*******************************************************/
+    @UI.identification: [{ 
+        position: 10, 
+        label: 'Id Función'
+    }]
+    
+//    @UI.selectionField: [{
+//        position: 10
+//    }]
+    @UI.lineItem: [{
+        position: 10
+    }]
+    id_funcion;
+    
+/*******************************************************/
+    @UI.identification: [{ 
+        position: 20, 
+        label: 'Id Pelicula'
+    }]
+    
+//    @UI.selectionField: [{
+//        position: 20
+//    }]
+    @UI.lineItem: [{
+        position: 20
+    }]
+    id_pelicula;
+    
+/*******************************************************/
+    @UI.identification: [{ 
+        position: 30, 
+        label: 'Hora de inicio de la Función'
+    }]
+    
+    @UI.selectionField: [{
+        position: 30
+    }]
+    @UI.lineItem: [{
+        position: 30
+    }]
+    hora_inicio_funcion;
+    
+/*******************************************************/
+    @UI.identification: [{ 
+        position: 40, 
+        label: 'Hora final de la Función'
+    }]
+    
+    @UI.selectionField: [{
+        position: 40
+    }]
+    @UI.lineItem: [{
+        position: 40
+    }]
+    hora_final_funcion;
+    
+/*******************************************************/
+    @UI.identification: [{ 
+        position: 50, 
+        label: 'Fecha de la función'
+    }]
+    
+    @UI.selectionField: [{
+        position: 50
+    }]
+    @UI.lineItem: [{
+        position: 50
+    }]
+    fecha_funcion;
+    
+/*******************************************************/
+    @UI.identification: [{ 
+        position: 60, 
+        label: 'Precio de la función'
+    }]
+    
+    @UI.lineItem: [{
+        position: 60
+    }]
+    precio_funcion;
+    
+/*******************************************************/
+    @UI.identification: [{ 
+        position: 60, 
+        label: 'Moneda'
+    }]
+    
+    @UI.lineItem: [{
+        position: 60
+    }]
+    moneda_funcion;
+    /* Associations */
+    //_Peliculas;
+    
+}
