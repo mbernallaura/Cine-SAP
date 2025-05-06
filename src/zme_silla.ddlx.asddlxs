@@ -1,0 +1,99 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+    typeName: 'item',
+    typeNamePlural: 'Silla',
+    title: {
+        type: #STANDARD,
+        label: 'Silla',
+        iconUrl: 'sap-icon://palette',
+        criticalityRepresentation: #WITHOUT_ICON,
+        value: 'nombre_silla'
+    }
+}
+annotate entity ZC_SILLA
+    with 
+{
+    @UI.facet: [
+      {
+          id: 'Identification01',
+          purpose: #STANDARD,
+          type: #IDENTIFICATION_REFERENCE,
+          label: 'Detalle del Puesto',
+          position: 10
+      },
+      {
+          id: 'LineItem01',
+           purpose: #STANDARD, 
+          type: #LINEITEM_REFERENCE,
+          label: 'Funciones',
+          position: 50,
+          targetElement: '_Funciones'
+       }
+    ]
+/*******************************************************/
+    @UI.identification: [{ 
+        position: 10, 
+        label: 'Id silla'
+    }]
+    
+    @UI.lineItem: [{
+        position: 10
+    }]
+    id_silla;
+    
+/*******************************************************/
+    @UI.identification: [{ 
+        position: 20, 
+        label: 'Id función'
+    }]
+    
+    @UI.lineItem: [{
+        position: 20
+    }]
+    id_funcion;
+    
+/*******************************************************/
+    @UI.identification: [{ 
+        position: 30, 
+        label: 'Id pelicula'
+    }]
+    
+    @UI.lineItem: [{
+        position: 30
+    }]
+    id_pelicula;
+    
+/*******************************************************/
+    @UI.identification: [{ 
+        position: 40, 
+        label: 'Nombre de la silla'
+    }]
+    
+    @UI.selectionField: [{
+        position: 40
+    }]
+    
+    @UI.lineItem: [{
+        position: 40
+    }]
+    nombre_silla;
+   
+/*******************************************************/
+    @UI.identification: [{ 
+        position: 40, 
+        label: 'Estado de la silla'
+    }]
+    
+    @UI.selectionField: [{
+        position: 40
+    }]
+    
+    @UI.lineItem: [{
+        position: 40
+    }]
+    estado_silla;
+    /* Associations */
+//    _Funciones;
+//    _Peliculas;
+    
+}
