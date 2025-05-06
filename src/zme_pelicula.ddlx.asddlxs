@@ -1,10 +1,10 @@
 @Metadata.layer: #CORE
 @UI.headerInfo: {
     typeName: 'item',
-    typeNamePlural: 'Obras de Teatro',
+    typeNamePlural: 'Películas',
     title: {
         type: #STANDARD,
-        label: 'Obra de teatro',
+        label: 'Película',
         iconUrl: 'sap-icon://palette',
         criticalityRepresentation: #WITHOUT_ICON,
         value: 'nombre'
@@ -38,9 +38,6 @@ annotate entity ZC_PELICULA with
          label: 'Id'}
     ]
 
-  @UI.selectionField: [
-    {position: 10}
-   ]
   @UI.lineItem: [
     {position: 10}
   ]
@@ -50,9 +47,10 @@ annotate entity ZC_PELICULA with
   @UI.lineItem: [
     {position: 20}
   ]
-  @UI.selectionField: [
+   @UI.selectionField: [
     {position: 20}
   ]
+  
   @UI.identification: [
     {
     position: 20,
@@ -65,9 +63,10 @@ annotate entity ZC_PELICULA with
   @UI.lineItem: [
     {position: 30}
   ]
-  @UI.selectionField: [
+   @UI.selectionField: [
     {position: 30}
   ]
+
   @UI.identification: [
     {
     position: 30,
@@ -79,9 +78,10 @@ annotate entity ZC_PELICULA with
   @UI.lineItem: [
     {position: 40}
   ]
-  @UI.selectionField: [
+   @UI.selectionField: [
     {position: 40}
   ]
+
   @UI.identification: [
     {
     position: 40,
@@ -93,7 +93,7 @@ annotate entity ZC_PELICULA with
   @UI.lineItem: [
     {position: 50}
   ]
-  @UI.selectionField: [
+   @UI.selectionField: [
     {position: 50}
   ]
   @UI.identification: [
@@ -107,22 +107,26 @@ annotate entity ZC_PELICULA with
   @UI.lineItem: [
     {position: 60}
   ]
-  @UI.selectionField: [
+  
+   @UI.selectionField: [
     {position: 60}
   ]
+
   @UI.identification: [
     {
-    position: 60,
-    label: 'Imagen'
+        position: 60,
+        label: 'Imagen'
     }
   ]
   imagen;
   @UI.lineItem: [
     {position: 70}
   ]
-  @UI.selectionField: [
+  
+   @UI.selectionField: [
     {position: 70}
   ]
+
   @UI.identification: [
     {
     position: 70,
@@ -131,29 +135,32 @@ annotate entity ZC_PELICULA with
   ]
   fecha_ini_estreno;
   @UI.lineItem: [
-    {position: 70}
+    {position: 80}
   ]
-  @UI.selectionField: [
-    {position: 70}
+  
+   @UI.selectionField: [
+    {position: 80}
   ]
+
   @UI.identification: [
     {
-    position: 70,
+    position: 80,
     label: 'Fecha Fin Estreno'
     }
   ]
   fecha_fin_estreno;
   /* Associations */
   @UI.lineItem: [
-    {position: 80}
+    {position: 90}
   ]
-  @UI.selectionField: [
-    {position: 80}
+   @UI.selectionField: [
+    {position: 90}
   ]
+  
   @UI.identification: [
     {
-    position: 80,
-    label: 'Funciones'
+        position: 90,
+        label: 'Funciones'
     }
   ]
   _Funciones;

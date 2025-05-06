@@ -1,0 +1,176 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+    typeName: 'item',
+    typeNamePlural: '',
+    title: {
+        type: #STANDARD,
+        label: 'Obra de teatro',
+        iconUrl: 'sap-icon://palette',
+        criticalityRepresentation: #WITHOUT_ICON,
+        value: '_Peliculas.nombre'
+    }
+}
+annotate entity ZC_FACTURA with
+{
+
+  @UI.facet: [
+      {
+          id: 'Identification01',
+          purpose: #STANDARD,
+          type: #IDENTIFICATION_REFERENCE,
+          label: 'Detalle Factura',
+          position: 10
+      },
+      {
+          id: 'LineItem01',
+           purpose: #STANDARD,
+          type: #LINEITEM_REFERENCE,
+          label: 'Funcion',
+          position: 80,
+          targetElement: '_Funciones'
+       },
+       {
+          id: 'LineItem02',
+           purpose: #STANDARD,
+          type: #LINEITEM_REFERENCE,
+          label: 'Película',
+          position: 90,
+          targetElement: '_Peliculas'
+       },
+       {
+          id: 'LineItem03',
+           purpose: #STANDARD,
+          type: #LINEITEM_REFERENCE,
+          label: 'Silla',
+          position: 100,
+          targetElement: '_Sillas'
+       }
+
+    ]
+
+  @UI.identification: [
+        {
+            position: 10,
+            label: 'Id factura'
+        }
+    ]
+
+
+  @UI.lineItem: [
+    {position: 10}
+  ]
+
+  id_factura;
+
+  @UI.lineItem: [
+    {position: 20}
+  ]
+  
+  @UI.identification: [
+    {
+        position: 20,
+        label: 'Id silla'
+    }
+  ]
+  id_silla;
+  @UI.lineItem: [
+    {position: 30}
+  ]
+  @UI.selectionField: [
+    {position: 30}
+  ]
+
+  @UI.identification: [
+    {
+        position: 30,
+        label: 'Id Función'
+    }
+  ]
+  id_funcion;
+  @UI.lineItem: [
+    {position: 40}
+  ]
+  @UI.selectionField: [
+    {position: 40}
+  ]
+
+  @UI.identification: [
+    {
+        position: 40,
+        label: 'Id película'
+    }
+  ]
+  id_pelicula;
+  
+  @UI.lineItem: [
+    {position: 50}
+  ]
+  @UI.selectionField: [
+    {position: 50}
+  ]
+
+  @UI.identification: [
+    {
+        position: 50,
+        label: 'Precio total'
+    }
+  ]
+  precio_total;
+  
+   @UI.lineItem: [
+    {position: 60}
+  ]
+  @UI.selectionField: [
+    {position: 60}
+  ]
+
+  @UI.identification: [
+    {
+        position: 60,
+        label: 'Moneda'
+    }
+  ]
+  moneda_total;
+  /* Associations */
+  @UI.lineItem: [
+    {position: 80}
+  ]
+  @UI.selectionField: [
+    {position: 80}
+  ]
+  @UI.identification: [
+    {
+    position: 80,
+    label: 'Funciones'
+    }
+  ]
+  _Funciones;
+  
+  @UI.lineItem: [
+    {position: 90}
+  ]
+  @UI.selectionField: [
+    {position: 90}
+  ]
+  @UI.identification: [
+    {
+        position: 90,
+        label: 'Peliculas'
+    }
+  ]
+  _Peliculas;
+  
+  @UI.lineItem: [
+    {position: 100}
+  ]
+  @UI.selectionField: [
+    {position: 100}
+  ]
+  @UI.identification: [
+    {
+        position: 100,
+        label: 'Peliculas'
+    }
+  ]
+  _Sillas;
+}
