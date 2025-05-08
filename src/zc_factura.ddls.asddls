@@ -12,7 +12,7 @@ define view entity ZC_FACTURA as projection on ZI_FACTURA
   precio_total,
   moneda_total,
   //Antecesores
-  _Peliculas,
+  _Peliculas: redirected to ZC_PELICULA,
   _Funciones,
   _Sillas: redirected to parent ZC_SILLA
 }

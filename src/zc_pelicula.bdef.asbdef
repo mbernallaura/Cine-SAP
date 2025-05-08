@@ -1,10 +1,44 @@
 projection;
 strict ( 2 );
+use side effects;
 
 define behavior for ZC_PELICULA //alias <alias_name>
 {
   use create;
   use update;
   use delete;
+
+  use association _Funciones { create; }
+}
+
+define behavior for ZC_FUNCION //alias <alias_name>
+{
+  use update;
+  use delete;
+
+  use association _Peliculas;
+  use association _Sillas { create; }
+
+}
+
+define behavior for ZC_SILLA //alias <alias_name>
+{
+  use update;
+  use delete;
+
+  use association _Peliculas;
+  use association _Funciones;
+  use association _Facturas { create; }
+
+}
+
+define behavior for ZC_FACTURA //alias <alias_name>
+{
+  use update;
+  use delete;
+
+  use association _Peliculas;
+  use association _Sillas;
+  use association _Funciones;
 
 }

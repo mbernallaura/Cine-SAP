@@ -1,4 +1,7 @@
 @EndUserText.label: 'Service definition - Pelicula'
 define service ZSD_PELICULA {
   expose ZC_PELICULA as Pelicula;
+  expose ZC_FUNCION  as Funcion;
+  expose ZC_SILLA    as Silla;
+  expose ZC_FACTURA  as Factura;
 }
