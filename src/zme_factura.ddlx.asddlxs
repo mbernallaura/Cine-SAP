@@ -20,32 +20,7 @@ annotate entity ZC_FACTURA with
           type: #IDENTIFICATION_REFERENCE,
           label: 'Detalle Factura',
           position: 10
-      },
-      {
-          id: 'LineItem01',
-           purpose: #STANDARD,
-          type: #LINEITEM_REFERENCE,
-          label: 'Funcion',
-          position: 80,
-          targetElement: '_Funciones'
-       },
-       {
-          id: 'LineItem02',
-           purpose: #STANDARD,
-          type: #LINEITEM_REFERENCE,
-          label: 'Película',
-          position: 90,
-          targetElement: '_Peliculas'
-       },
-       {
-          id: 'LineItem03',
-           purpose: #STANDARD,
-          type: #LINEITEM_REFERENCE,
-          label: 'Silla',
-          position: 100,
-          targetElement: '_Sillas'
-       }
-
+      }
     ]
 
   @UI.identification: [
@@ -131,46 +106,5 @@ annotate entity ZC_FACTURA with
     }
   ]
   moneda_total;
-  /* Associations */
-  @UI.lineItem: [
-    {position: 80}
-  ]
-  @UI.selectionField: [
-    {position: 80}
-  ]
-  @UI.identification: [
-    {
-    position: 80,
-    label: 'Funciones'
-    }
-  ]
-  _Funciones;
   
-  @UI.lineItem: [
-    {position: 90}
-  ]
-  @UI.selectionField: [
-    {position: 90}
-  ]
-  @UI.identification: [
-    {
-        position: 90,
-        label: 'Peliculas'
-    }
-  ]
-  _Peliculas;
-  
-  @UI.lineItem: [
-    {position: 100}
-  ]
-  @UI.selectionField: [
-    {position: 100}
-  ]
-  @UI.identification: [
-    {
-        position: 100,
-        label: 'Peliculas'
-    }
-  ]
-  _Sillas;
 }

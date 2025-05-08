@@ -25,9 +25,9 @@ annotate entity ZC_SILLA
           id: 'LineItem01',
            purpose: #STANDARD, 
           type: #LINEITEM_REFERENCE,
-          label: 'Funciones',
+          label: 'Facturas',
           position: 50,
-          targetElement: '_Funciones'
+          targetElement: '_Facturas'
        }
     ]
 /*******************************************************/

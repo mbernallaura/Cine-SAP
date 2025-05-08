@@ -1,6 +1,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Comsuption -  Peliculas'
 @Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
 define root view entity ZC_PELICULA
   provider contract transactional_query as projection on ZI_PELICULA
 {
@@ -12,5 +13,6 @@ define root view entity ZC_PELICULA
     imagen,
     fecha_ini_estreno,
     fecha_fin_estreno,
-    _Funciones
+    _Funciones: redirected to composition child ZC_FUNCION
+    
 }

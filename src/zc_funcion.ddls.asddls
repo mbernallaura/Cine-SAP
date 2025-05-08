@@ -12,5 +12,7 @@ define view entity ZC_FUNCION as projection on ZI_FUNCION
     @Semantics.amount.currencyCode: 'moneda_funcion'
     precio_funcion,
     moneda_funcion,
-    _Peliculas
+    _Peliculas: redirected to parent ZC_PELICULA,
+    _Sillas: redirected to composition child ZC_SILLA
+    
 }

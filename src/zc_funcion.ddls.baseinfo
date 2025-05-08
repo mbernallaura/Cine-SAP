@@ -7,7 +7,10 @@
 ],
 "ASSOCIATED":
 [
-"ZI_PELICULA"
+"ZC_PELICULA",
+"ZC_SILLA",
+"ZI_PELICULA",
+"ZI_SILLA"
 ],
 "BASE":
 [

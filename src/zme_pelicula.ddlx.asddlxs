@@ -26,8 +26,8 @@ annotate entity ZC_PELICULA with
           id: 'LineItem01',
            purpose: #STANDARD, 
           type: #LINEITEM_REFERENCE,
-          label: 'Obra',
-          position: 80,
+          label: 'Funciones',
+          position: 90,
           targetElement: '_Funciones'
        }
     ]
@@ -151,9 +151,6 @@ annotate entity ZC_PELICULA with
   fecha_fin_estreno;
   /* Associations */
   @UI.lineItem: [
-    {position: 90}
-  ]
-   @UI.selectionField: [
     {position: 90}
   ]
   

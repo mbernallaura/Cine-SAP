@@ -10,6 +10,8 @@ define view entity ZC_SILLA as projection on ZI_SILLA
     nombre_silla,
     estado_silla,
     /* Associations */
-    _Funciones,
-    _Peliculas
+    _Funciones: redirected to parent ZC_FUNCION,
+    _Peliculas,
+    _Facturas: redirected to composition child ZC_FACTURA
+    
 }
