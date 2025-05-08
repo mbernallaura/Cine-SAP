@@ -1,12 +1,13 @@
-@AbapCatalog.viewEnhancementCategory: [#NONE]
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Interface tabla FACTURA'
 @Metadata.ignorePropagatedAnnotations: true
-@ObjectModel.usageType:{
+/*@ObjectModel.usageType:{
     serviceQuality: #X,
     sizeCategory: #S,
     dataClass: #MIXED
 }
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+*/
 define view entity ZI_FACTURA as select from ztt_factura
 
 association [1..1] to ZI_PELICULA as _Peliculas

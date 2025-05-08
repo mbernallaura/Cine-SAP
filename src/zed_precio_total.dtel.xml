@@ -3,18 +3,18 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <DD04V>
-    <ROLLNAME>ZED_PRECIO_FUNCION</ROLLNAME>
+    <ROLLNAME>ZED_PRECIO_TOTAL</ROLLNAME>
     <DDLANGUAGE>S</DDLANGUAGE>
-    <DOMNAME>ZDO_PRECIO_FUNCION</DOMNAME>
+    <DOMNAME>ZDO_PRECIO_TOTAL</DOMNAME>
     <HEADLEN>55</HEADLEN>
     <SCRLEN1>10</SCRLEN1>
     <SCRLEN2>20</SCRLEN2>
     <SCRLEN3>40</SCRLEN3>
-    <DDTEXT>Elemento precio funcion</DDTEXT>
-    <REPTEXT>Precio función</REPTEXT>
-    <SCRTEXT_S>Precio</SCRTEXT_S>
-    <SCRTEXT_M>Precio función</SCRTEXT_M>
-    <SCRTEXT_L>Precio función</SCRTEXT_L>
+    <DDTEXT>Elemento de datos para precio total factura</DDTEXT>
+    <REPTEXT>Precio total</REPTEXT>
+    <SCRTEXT_S>Total</SCRTEXT_S>
+    <SCRTEXT_M>Precio total</SCRTEXT_M>
+    <SCRTEXT_L>Precio total</SCRTEXT_L>
     <DTELMASTER>S</DTELMASTER>
     <REFKIND>D</REFKIND>
     <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>

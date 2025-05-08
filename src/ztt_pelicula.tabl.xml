@@ -9,8 +9,9 @@
     <CLIDEP>X</CLIDEP>
     <DDTEXT>Tabla de base de datos para Película</DDTEXT>
     <MASTERLANG>S</MASTERLANG>
+    <MAINFLAG>X</MAINFLAG>
     <CONTFLAG>A</CONTFLAG>
-    <EXCLASS>1</EXCLASS>
+    <EXCLASS>4</EXCLASS>
    </DD02V>
    <DD09L>
     <TABNAME>ZTT_PELICULA</TABNAME>

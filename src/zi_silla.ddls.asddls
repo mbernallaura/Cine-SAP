@@ -1,12 +1,13 @@
-@AbapCatalog.viewEnhancementCategory: [#NONE]
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Interface para silla'
 @Metadata.ignorePropagatedAnnotations: true
-@ObjectModel.usageType:{
+/*@ObjectModel.usageType:{
     serviceQuality: #X,
     sizeCategory: #S,
     dataClass: #MIXED
 }
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+*/
 define view entity ZI_SILLA as select from ztt_silla
 
 association to parent ZI_FUNCION as _Funciones

@@ -4,7 +4,7 @@ strict ( 2 );
 define behavior for ZI_PELICULA //alias <alias_name>
 persistent table ztt_pelicula
 lock master
-authorization master ( global, instance )
+authorization master ( instance )
 //etag master <field_name>
 {
   create;
@@ -21,7 +21,8 @@ authorization dependent by _Peliculas
 //etag master <field_name>
 {
   update;
-  delete;field ( readonly: update ) id_funcion;
+  delete;
+  field ( readonly: update ) id_funcion;
   field ( readonly ) id_pelicula;
   association _Peliculas;
   association _Sillas { create; }
@@ -53,6 +54,5 @@ authorization dependent by _Peliculas
   field ( readonly: update ) id_factura;
   field ( readonly ) id_silla, id_funcion, id_pelicula;
   association _Peliculas;
-  association _Funciones;
   association _Sillas;
 }

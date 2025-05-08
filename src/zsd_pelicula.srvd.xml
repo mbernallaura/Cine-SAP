@@ -5,7 +5,7 @@
    <SRVD>
     <NAME>ZSD_PELICULA</NAME>
     <TYPE>SRVD/SRV</TYPE>
-    <DESCRIPTION>Service definition - Pelicula</DESCRIPTION>
+    <DESCRIPTION>Servide definition - Tabla pelicula</DESCRIPTION>
     <LANGUAGE>ES</LANGUAGE>
     <MASTER_LANGUAGE>ES</MASTER_LANGUAGE>
     <SOURCE_URI>./zsd_pelicula/source/main</SOURCE_URI>

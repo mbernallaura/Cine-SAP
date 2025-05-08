@@ -1,5 +1,5 @@
-@EndUserText.label: 'Service definition - Pelicula'
-define service ZSD_PELICULA {
+@EndUserText.label: 'Servide definition - Tabla pelicula'
+define service ZSD_pelicula {
   expose ZC_PELICULA as Pelicula;
   expose ZC_FUNCION  as Funcion;
   expose ZC_SILLA    as Silla;
